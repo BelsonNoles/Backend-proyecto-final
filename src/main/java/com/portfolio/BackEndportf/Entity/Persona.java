@@ -6,8 +6,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import lombok.Getter;
-import lombok.Setter;
 
 
 @Entity
@@ -37,6 +35,10 @@ public class Persona {
         this.apellido = apellido;
         this.descripcion = descripcion;
         this.img = img;
+    }
+
+    public Persona(String nombre, String descripcion) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public int getId() {
